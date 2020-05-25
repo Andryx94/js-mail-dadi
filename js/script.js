@@ -37,7 +37,7 @@ function () {
   for (var i=0; i< emailValide.length; i++) {
     if (emailValide[i] == emailVerifica.value) {
       alertEmailVerifica.innerHTML = "L'Email è presente";
-    }    
+    }
   }
 }
 );
