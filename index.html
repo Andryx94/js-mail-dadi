@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Controllo email e lancio dadi</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,600,400,800" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Sezione verifica email -->
+    <h2>Verifica la tua Email</h2>
+
+    <div class="container">
+      <!-- colonna email verificate -->
+      <div class="col-xs-6">
+        <h3>Email valide</h3>
+        <ul>
+          <li>nomecognome@gmail.com</li>
+          <li>nomecognome@yahoo.com</li>
+          <li>nomecognome@libero.it</li>
+          <li>nomecognome@alice.it</li>
+        </ul>
+
+        <p>La tua email non è presente? Inseriscila qui:</p>
+        <input id="email-aggiungi" type="text" name="" placeholder="Inserisci la tua email">
+        <button id="bottone-invia-aggiungi" type="button" name="button">Invia</button>
+        <button id="bottone-annulla-aggiungi" type="button" name="button">Cancella</button>
+      </div>
+
+      <!-- colonna verifica email -->
+      <div class="col-xs-6">
+        <h3>Controlla l'email</h3>
+
+        <input id="email-verifica" type="text" name="" placeholder="Inserisci la tua email">
+        <button id="bottone-invia-verifica" type="button" name="button">Invia</button>
+        <button id="bottone-annulla-verifica" type="button" name="button">Cancella</button>
+      </div>
+    </div>
+    <!-- fine sezione verifica email -->
+
+    <!-- Sezione gioco dadi -->
+    <h2>Gioco dei dadi</h2>
+
+    <div class="container">
+      <!-- colonna gioco dadi -->
+      <div class="col-xs-12">
+        <h3>Regole del gioco</h3>
+        <p>Classico gioco del lancio dei dadi, l'utente tira un dado, il computer fa altrettanto. Vince chi ottiene il punteggio più alto!</p>
+        <button id="bottone-dado-utente" type="button" name="button">Lancia il dado</button>
+
+        <p>Hai ottenuto <span id="risultato-dado-utente"></span> punti</p>
+        <p>Il computer ha ottenuto <span id="risultato-dado-pc"></span> punti</p>
+
+        <p><span id="vincitore"></span> vinto!</p>
+      </div>
+    </div>
+    <!-- fine sezione gioco dadi -->
+
+    <script type="text/javascript" src="js/script.js">
+    </script>
+  </body>
+</html>

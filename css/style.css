@@ -1,0 +1,31 @@
+/* Generali */
+body {
+font-family: 'Roboto', sans-serif;
+text-align: center;
+background-color: grey;
+}
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin-top: 0;
+  font-weight: 800;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+/* fine generali */
