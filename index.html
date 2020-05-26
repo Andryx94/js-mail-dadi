@@ -16,16 +16,18 @@
       <div class="col-xs-12">
         <h3>Controlla l'email</h3>
 
-        <input id="email-verifica" type="text" name="" placeholder="Inserisci l'email">
+        <input id="email-verifica" type="text" name="email-verifica" placeholder="Inserisci l'email">
         <button id="bottone-invia-verifica" type="button" name="button">Invia</button>
         <button id="bottone-annulla-verifica" type="button" name="button">Cancella</button>
 
         <p id="alert-email-verifica"></p>
 
         <p>La tua email non è presente? Inseriscila qui:</p>
-        <input id="email-aggiungi" type="text" name="" placeholder="Inserisci la tua email">
+        <input id="email-aggiungi" type="text" name="email-aggiungi" placeholder="Inserisci la tua email">
         <button id="bottone-invia-aggiungi" type="button" name="button">Invia</button>
         <button id="bottone-annulla-aggiungi" type="button" name="button">Cancella</button>
+
+        <p id="alert-email-aggiungi"></p>
       </div>
     </div>
     <!-- fine sezione verifica email -->
@@ -37,18 +39,22 @@
       <!-- colonna gioco dadi -->
       <div class="col-xs-12">
         <h3>Regole del gioco</h3>
-        <p>Classico gioco del lancio dei dadi, l'utente tira un dado, il computer fa altrettanto. Vince chi ottiene il punteggio più alto!</p>
+        <p id="regole-dadi">Classico gioco del lancio dei dadi, l'utente tira un dado, il computer fa altrettanto. Vince chi ottiene il punteggio più alto!</p>
         <button id="bottone-dado-utente" type="button" name="button">Lancia il dado!</button>
+        <button id="bottone-dado-annulla" type="button" name="button">Cancella</button>
 
-        <p>Hai ottenuto <span id="risultato-dado-utente"></span> punti</p>
-        <p>Il computer ha ottenuto <span id="risultato-dado-pc"></span> punti</p>
 
-        <p id="vincitore"></p>
+        <div id="nohidden" class="hidden">
+          <p>Hai ottenuto <span id="risultato-dado-utente"></span> punti</p>
+          <p>Il computer ha ottenuto <span id="risultato-dado-pc"></span> punti</p>
+
+          <p id="vincitore"></p>
+        </div>
       </div>
     </div>
     <!-- fine sezione gioco dadi -->
 
-    <script type="text/javascript" src="js/script.js">
+    <script src="js/script.js">
     </script>
   </body>
 </html>

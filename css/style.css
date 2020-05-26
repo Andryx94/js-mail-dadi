@@ -23,9 +23,34 @@ li {
   list-style-type: none;
 }
 
+button, input {
+  color: white;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 10px;
+  text-align: center;
+}
+
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+
 .container {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#nohidden {
+  padding-top: 10px;
+}
+
+#vincitore, span {
+  font-weight: 800;
 }
 /* fine generali */
